@@ -8,21 +8,21 @@ const Github = ({ size = 24, color = "currentColor", className = "" }) => (
 
 export default function({title, description, tech, github, link}){
     return(
-        <div className='flex flex-col justify-between h-full bg-[#05193c] p-6 md:p-7 rounded-lg transition-transform duration-300 hover:-translate-y-2'>
+        <div className='flex flex-col justify-between h-full bg-teal-panel p-6 md:p-7 rounded-lg transition-transform duration-300 hover:-translate-y-2'>
 
             <div>
         {/* Top Icons */}
         <div className="flex justify-between items-center mb-6">
-          <Folder size={36} className="text-[#963fbb]" strokeWidth={1.5} />
+          <Folder size={36} className="text-mint-bright" strokeWidth={1.5} />
           
           <div className="flex gap-4">
             {github && (
-              <a href={github} target="_blank" rel="noopener noreferrer" className="text-[#ccd6f6] hover:text-[#963fbb] transition-colors">
+              <a href={github} target="_blank" rel="noopener noreferrer" className="text-ivory hover:text-ivory transition-colors">
                 <Github size={20} strokeWidth={2} />
               </a>
             )}
             {link && (
-              <a href={link} target="_blank" rel="noopener noreferrer" className="text-[#ccd6f6] hover:text-[#963fbb] transition-colors">
+              <a href={link} target="_blank" rel="noopener noreferrer" className="text-ivory hover:text-ivory transition-colors">
                 <ExternalLink size={20} strokeWidth={2} />
               </a>
             )}
@@ -30,15 +30,15 @@ export default function({title, description, tech, github, link}){
         </div>
 
         {/* Text Content */}
-        <h3 className="text-[#ccd6f6] text-xl font-bold mb-3">
+        <h3 className="text-ivory text-xl font-bold mb-3">
           {title}
         </h3>
-        <p className="text-[#8892b0] text-[15px] leading-relaxed">
+        <p className="text-ivory text-[15px] leading-relaxed">
           {description}
         </p>
       </div>
 
-      <div className="mt-8 text-[#8892b0] text-sm font-mono">
+      <div className="mt-8 text-ivory text-sm font-mono">
         {tech}
       </div>
       </div>

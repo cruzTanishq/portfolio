@@ -1,4 +1,3 @@
-import React from 'react';
 import { Mail } from 'lucide-react';
 
 const Github = ({ size = 24, color = "currentColor", className = "" }) => (
@@ -17,40 +16,43 @@ const Linkedin = ({ size = 24, color = "currentColor", className = "" }) => (
 
 const NavBar = () => {
   return (
-    <nav className="w-full flex justify-between items-center pb-6 mb-8 border-b border-gray-800 text-[#8892b0]">
+    <nav className="w-full flex justify-between items-center pb-6 mb-8 border-b border-teal-border text-ivory">
       
       {/* Left Side: Page Links */}
-      <div className="flex gap-8 font-mono text-lg">
-        <a href="#about" className="hover:text-[#963fbb] transition-colors">
+      <div className="flex gap-3 md:gap-8 font-mono text-sm md:text-lg">
+        <a href="#about" className="hover:text-ivory transition-colors">
           / about
         </a>
-        <a href="#software" className="hover:text-[#963fbb] transition-colors">
-          / software
+        <a href="#experience" className="hover:text-ivory transition-colors">
+          / experience
+        </a>
+        <a href="#personal-projects" className="hover:text-ivory transition-colors">
+          / personal projects
         </a>
        
       </div>
 
       {/* Right Side: Social Icons */}
-      <div className="flex gap-5">
+      <div className="flex gap-3 md:gap-5">
         <a 
-          href="https://github.com/alayacruz" 
+          href="https://github.com/cruzTanishq" 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="hover:text-[#963fbb] transition-colors"
+          className="hover:text-ivory transition-colors"
         >
           <Github size={22} />
         </a>
         <a 
-          href="https://www.linkedin.com/in/alaya-d-cruz-8590952a5/?isSelfProfile=true" 
+          href="https://www.linkedin.com/in/tanishq-d-cruz-585805112" 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="hover:text-[#963fbb] transition-colors"
+          className="hover:text-ivory transition-colors"
         >
           <Linkedin size={22} />
         </a>
         <a 
-          href="mailto:alayadcruz09@gmail.com" 
-          className="hover:text-[#963fbb] transition-colors"
+          href="mailto:tanishqdc@gmail.com" 
+          className="hover:text-ivory transition-colors"
         >
           <Mail size={22} />
         </a>

@@ -1,7 +1,7 @@
-import { useState } from 'react';
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import About from "./components/About"
+import Experience from './components/Experience';
 import Software from './components/Software';
 
 
@@ -10,7 +10,7 @@ import './App.css'
 function App() {
   return (
 
-    <div className="min-h-screen bg-[#1a0442] text-gray-300 font-sans scroll-smooth selection:bg-gray-700 selection:text-[#963fbb]">
+    <div className="min-h-screen bg-teal-page text-ivory font-sans scroll-smooth selection:bg-ivory selection:text-teal-page">
  
       <div className="max-w-6xl mx-auto px-6 py-12 md:py-20 md:px-12 flex flex-col gap-15">
         
@@ -25,10 +25,11 @@ function App() {
              <section id="about">
             <About />
           </section>
-      
-       
+            <section id="experience">
+              <Experience />
+            </section>
           
-          <section id="software">
+          <section id="personal-projects">
             <Software />
           </section>
               {/* 
